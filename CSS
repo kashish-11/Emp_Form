@@ -1,0 +1,50 @@
+@charset "ISO-8859-1";
+.head{
+	 position:absolute; 
+         font-style : "Times-New-Roman";
+         font-weight : bolder;
+         font-size : 40px;
+         color : rgb(200, 100, 0);
+         left : 450px;
+         top : 30px;
+}
+body{
+	background-image:url("https://nayainsurancetax.com/wp-content/uploads/2019/01/insurance-quote-form-background-fontana-ca.jpg");
+	
+}
+input{
+	width : 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+select{
+	width : 100%;
+    padding: 12px 20px;
+    margin: 8px 0 ;
+    box-sizing: border-box;
+}
+form{
+	color : #FBA892;
+	background-color : "black";
+	
+	
+	font-size : 20px;
+	}
+
+fieldset{
+	position : absolute;
+	left : 500px;
+	top : 130px;
+	background-image : url("https://i0.wp.com/css-tricks.com/wp-content/uploads/2018/08/vector.png?ssl=1")
+}
+
+button{
+	position : absolute;
+	top : 1290px;
+	left : 210px;
+	font-size : 30px;
+	background : black;
+	color : white;
+	
+}
