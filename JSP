@@ -1,0 +1,47 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+ <%@ page import="java.sql.*" %>
+ <%@ page import="java.io.*"%>
+ <%@ page import="java.util.*" %>
+ <%@ page import="q2.Employee" %>
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>OUTPUT</title>
+</head>
+<body>
+<jsp:useBean id='emp' class='q2.Employee' scope='session'/>
+<jsp:setProperty name='emp' property='*'/>
+Employee name is <jsp:getProperty name="emp" property="fname"/>
+<br>
+Employee age is <jsp:getProperty name="emp" property="age"/>
+<% 
+try
+{
+Class.forName("com.mysql.cj.jdbc.driver");
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/employee","root","root");
+Statement st = con.createStatement();
+ String sql = "insert into employee(FName,Age,Lname,Gender,State,City,Hno,Pcode,Salary,Phno,Dob)values(?,?,?,?,?,?,?,?,?,?,?)";
+ PreparedStatement pst = con.prepareStatement(sql);
+ pst.setString(1, emp.getFname());
+ pst.setInt(2,emp.getAge());
+ pst.setString(3,emp.getLname());
+ pst.setString(4,emp.getGender());
+ pst.setString(5,emp.getState());
+ pst.setString(6,emp.getCity());
+ pst.setString(7,emp.getHno());
+ pst.setInt(8,emp.getPcode());
+ pst.setInt(9,emp.getSalary());
+ pst.setInt(10,emp.getPhno());
+ pst.setInt(11, emp.getDob());
+ pst.executeUpdate();
+ con.close();
+} catch (Exception e) {
+	System.out.print(e);
+	e.printStackTrace();
+}
+%>
+</body>
+</html>
