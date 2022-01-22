@@ -1,0 +1,354 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>REGISTRATION FORM</title>
+<link href="Q2.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+	<div class="head">EMPLOYEE REGISTRATION FORM</div>
+	<form action="Q2a.jsp" method="post">
+		<fieldset>
+			<br> First Name <br> <input type="text" name="fname"
+				placeholder="John" required> <br> <br>Last Name <br>
+			<input type="text" name="lname" placeholder="Smith" required>
+			<br> <br>Gender <br> <br>Male<input type="radio"
+				name="gender" value="Male"> Female<input type="radio"
+				name="gender" value="Female"> Other<input type="radio"
+				name="gender" value="Other"> <br> <br>Address<br>
+			<br> State &ensp;
+			<select name="state">
+				<option>-</option>
+				<option>Andhra Pradesh</option>
+				<option>Arunachal Pradesh</option>
+				<option>Assam</option>
+				<option>Bihar</option>
+				<option>Chhattisgarh</option>
+				<option>Goa</option>
+				<option>Gujarat</option>
+				<option>Haryana</option>
+				<option>Himachal Pradesh</option>
+				<option>Jammu and Kashmir</option>
+				<option>Jharkhand</option>
+				<option>Karnataka</option>
+				<option>Kerala</option>
+				<option>Madhya Pradesh</option>
+				<option>Maharashtra</option>
+				<option>Manipur</option>
+				<option>Meghalaya</option>
+				<option>Mizoram</option>
+				<option>Nagaland</option>
+				<option>Odisha</option>
+				<option>Punjab</option>
+				<option>Rajasthan</option>
+				<option>Sikkim</option>
+				<option>Tamil Nadu</option>
+				<option>Telangana</option>
+				<option>Tripura</option>
+				<option>Uttar Pradesh</option>
+				<option>Uttarakhand</option>
+				<option>West Bengal</option>
+			</select> &ensp;City &ensp;
+			<select name="city">
+				<option>-</option>
+				<option>Adilabad</option>
+				<option>Agra</option>
+				<option>Ahmedabad</option>
+				<option>Ahmednagar</option>
+				<option>Aizawl</option>
+				<option>Ajitgarh (Mohali)</option>
+				<option>Ajmer</option>
+				<option>Akola</option>
+				<option>Alappuzha</option>
+				<option>Aligarh</option>
+				<option>Alirajpur</option>
+				<option>Allahabad</option>
+				<option>Almora</option>
+				<option>Alwar</option>
+				<option>Ambala</option>
+				<option>Ambedkar Nagar</option>
+				<option>Amravati</option>
+				<option>Amreli district</option>
+				<option>Amritsar</option>
+				<option>Anand</option>
+				<option>Anantapur</option>
+				<option>Anantnag</option>
+				<option>Angul</option>
+				<option>Anjaw</option>
+				<option>Anuppur</option>
+				<option>Araria</option>
+				<option>Ariyalur</option>
+				<option>Arwal</option>
+				<option>Ashok Nagar</option>
+				<option>Auraiya</option>
+				<option>Aurangabad</option>
+				<option>Aurangabad</option>
+				<option>Azamgarh</option>
+				<option>Badgam</option>
+				<option>Bagalkot</option>
+				<option>Bageshwar</option>
+				<option>Bagpat</option>
+				<option>Bahraich</option>
+				<option>Baksa</option>
+				<option>Balaghat</option>
+				<option>Balangir</option>
+				<option>Bangalore Rural</option>
+				<option>Bangalore Urban</option>
+				<option>Banka</option>
+				<option>Bankura</option>
+				<option>Banswara</option>
+				<option>Barabanki</option>
+				<option>Baramulla</option>
+				<option>Baran</option>
+				<option>Bardhaman</option>
+				<option>Bareilly</option>
+				<option>Bargarh (Baragarh)</option>
+				<option>Barmer</option>
+				<option>Barnala</option>
+				<option>Barpeta</option>
+				<option>Barwani</option>
+				<option>Bastar</option>
+				<option>Basti</option>
+				<option>Bathinda</option>
+				<option>Beed</option>
+				<option>Begusarai</option>
+				<option>Belgaum</option>
+				<option>Bellary</option>
+				<option>Betul</option>
+				<option>Bhadrak</option>
+				<option>Bhagalpur</option>
+				<option>Bhandara</option>
+				<option>Bharatpur</option>
+				<option>Bharuch</option>
+				<option>Bhavnagar</option>
+				<option>Bhilwara</option>
+				<option>Bhind</option>
+				<option>Bhiwani</option>
+				<option>North Tripura</option>
+				<option>North West Delhi</option>
+				<option>Nuapada</option>
+				<option>Ongole</option>
+				<option>Osmanabad</option>
+				<option>Pakur</option>
+				<option>Palakkad</option>
+				<option>Palamu</option>
+				<option>Pali</option>
+				<option>Palwal</option>
+				<option>Panchkula</option>
+				<option>-Panchmahal</option>
+				<option>Panchsheel Nagar district (Hapur)</option>
+				<option>-Panipat</option>
+				<option>Panna</option>
+				<option>Papum Pare</option>
+				<option>Parbhani</option>
+				<option>Paschim Medinipur</option>
+				<option>Patan</option>
+				<option>Pathanamthitta</option>
+				<option>Pathankot</option>
+				<option>Patiala</option>
+				<option>Patna</option>
+				<option>Pauri Garhwal</option>
+				<option>Perambalur</option>
+				<option>Phek</option>
+				<option>Pilibhit</option>
+				<option>Pithoragarh</option>
+				<option>Pondicherry</option>
+				<option>Poonch</option>
+				<option>Porbandar</option>
+				<option>Pratapgarh</option>
+				<option>Pudukkottai</option>
+				<option>Pulwama</option>
+				<option>Pune</option>
+				<option>Purba Medinipur</option>
+				<option>Puri</option>
+				<option>Purnia</option>
+				<option>Purulia</option>
+				<option>Raebareli</option>
+				<option>Raichur</option>
+				<option>Raigad</option>
+				<option>Raigarh</option>
+				<option>Raipur</option>
+				<option>Raisen</option>
+				<option>Rajauri</option>
+				<option>Rajgarh</option>
+				<option>Rajkot</option>
+				<option>Rajnandgaon</option>
+				<option>Rajsamand</option>
+				<option>Ramabai Nagar (Kanpur Dehat)</option>
+				<option>Ramanagara</option>
+				<option>Ramanathapuram</option>
+				<option>Ramban</option>
+				<option>Ramgarh</option>
+				<option>Rampur</option>
+				<option>Ranchi</option>
+				<option>Ratlam</option>
+				<option>Ratnagiri</option>
+				<option>Rayagada</option>
+				<option>Reasi</option>
+				<option>Rewa</option>
+				<option>Rewari</option>
+				<option>Ri Bhoi</option>
+				<option>Rohtak</option>
+				<option>Rohtas</option>
+				<option>Rudraprayag</option>
+				<option>Rupnagar</option>
+				<option>Sabarkantha</option>
+				<option>Sagar</option>
+				<option>Saharanpur</option>
+				<option>Saharsa</option>
+				<option>Sahibganj</option>
+				<option>Saiha</option>
+				<option>Salem</option>
+				<option>Samastipur</option>
+				<option>Samba</option>
+				<option>Sambalpur</option>
+				<option>Sangli</option>
+				<option>Sangrur</option>
+				<option>Sant Kabir Nagar</option>
+				<option>Sant Ravidas Nagar</option>
+				<option>Saran</option>
+				<option>Satara</option>
+				<option>Satna</option>
+				<option>Sawai Madhopur</option>
+				<option>Sehore</option>
+				<option>Senapati</option>
+				<option>Seoni</option>
+				<option>Seraikela Kharsawan</option>
+				<option>Serchhip</option>
+				<option>Shahdol</option>
+				<option>Shahjahanpur</option>
+				<option>Shajapur</option>
+				<option>Shamli</option>
+				<option>Sheikhpura</option>
+				<option>Sheohar</option>
+				<option>Sheopur</option>
+				<option>Shimla</option>
+				<option>Shimoga</option>
+				<option>Shivpuri</option>
+				<option>Shopian</option>
+				<option>Shravasti</option>
+				<option>Sibsagar</option>
+				<option>Siddharthnagar</option>
+				<option>Sidhi</option>
+				<option>Sikar</option>
+				<option>Simdega</option>
+				<option>Sindhudurg</option>
+				<option>Singrauli</option>
+				<option>Sirmaur</option>
+				<option>Sirohi</option>
+				<option>Sirsa</option>
+				<option>Sitamarhi</option>
+				<option>Sitapur</option>
+				<option>Sivaganga</option>
+				<option>Siwan</option>
+				<option>Solan</option>
+				<option>Solapur</option>
+				<option>Sonbhadra</option>
+				<option>Sonipat</option>
+				<option>Sonitpur</option>
+				<option>South 24 Parganas</option>
+				<option>South Delhi</option>
+				<option>South Garo Hills</option>
+				<option>South Goa</option>
+				<option>South Sikkim</option>
+				<option>South Tripura</option>
+				<option>South West Delhi</option>
+				<option>Sri Muktsar Sahib</option>
+				<option>Srikakulam</option>
+				<option>Srinagar</option>
+				<option>Subarnapur (Sonepur)</option>
+				<option>Sultanpur</option>
+				<option>Sundergarh</option>
+				<option>Supaul</option>
+				<option>Surat</option>
+				<option>Surendranagar</option>
+				<option>Surguja</option>
+				<option>Tamenglong</option>
+				<option>Tarn Taran</option>
+				<option>Tawang</option>
+				<option>Tehri Garhwal</option>
+				<option>Thane</option>
+				<option>Thanjavur</option>
+				<option>The Dangs</option>
+				<option>Theni</option>
+				<option>Thiruvananthapuram</option>
+				<option>Thoothukudi</option>
+				<option>Thoubal</option>
+				<option>Thrissur</option>
+				<option>Tikamgarh</option>
+				<option>Tinsukia</option>
+				<option>Tirap</option>
+				<option>Tiruchirappalli</option>
+				<option>Tirunelveli</option>
+				<option>Tirupur</option>
+				<option>Tiruvallur</option>
+				<option>Tiruvannamalai</option>
+				<option>Tiruvarur</option>
+				<option>Tonk</option>
+				<option>Tuensang</option>
+				<option>Tumkur</option>
+				<option>Udaipur</option>
+				<option>Udalguri</option>
+				<option>Udham Singh Nagar</option>
+				<option>Udhampur</option>
+				<option>Udupi</option>
+				<option>Ujjain</option>
+				<option>Ukhrul</option>
+				<option>Umaria</option>
+				<option>Una</option>
+				<option>Unnao</option>
+				<option>Upper Siang</option>
+				<option>Upper Subansiri</option>
+				<option>Uttar Dinajpur</option>
+				<option>Uttara Kannada</option>
+				<option>Uttarkashi</option>
+				<option>Vadodara</option>
+				<option>Vaishali</option>
+				<option>Valsad</option>
+				<option>Varanasi</option>
+				<option>Vellore</option>
+				<option>Vidisha</option>
+				<option>Viluppuram</option>
+				<option>Virudhunagar</option>
+				<option>Visakhapatnam</option>
+				<option>Vizianagaram</option>
+				<option>Vyara</option>
+				<option>Warangal</option>
+				<option>Wardha</option>
+				<option>Washim</option>
+				<option>Wayanad</option>
+				<option>West Champaran</option>
+				<option>West Delhi</option>
+				<option>West Garo Hills</option>
+				<option>West Kameng</option>
+				<option>West Khasi Hills</option>
+				<option>West Siang</option>
+				<option>West Sikkim</option>
+				<option>West Singhbhum</option>
+				<option>West Tripura</option>
+				<option>Wokha</option>
+				<option>Yadgir</option>
+				<option>Yamuna Nagar</option>
+				<option>Yanam</option>
+				<option>Yavatmal</option>
+				<option>Zunheboto</option>
+			</select> 
+			<br> <br>House No. 
+			<br> <input type="text" name="hno"placeholder="House Number"> 
+			Pin Code &ensp;
+			<br> <input	type="number" name="pcode" placeholder="XXXXXX"> <br> <br>
+			DOB &ensp;
+			<br> <input type="date" name="dob"placeholder="yyyy-mm-dd"> 
+			<br> <br> Salary(p.a)
+			&ensp;<br> <input type="number" name="salary"> <br>
+			<br> Age &ensp;&ensp;<br> 
+			<input type="number" name="age">
+			<br> <br> Phone. No. &ensp;
+			<br> <input type="number" name="phno">
+			<button type="submit" value="Register">Register</button>
+		</fieldset>
+	</form>
+</body>
+</html>
